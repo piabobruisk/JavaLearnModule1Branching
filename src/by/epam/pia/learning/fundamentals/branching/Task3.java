@@ -31,10 +31,10 @@ public class Task3 {
         System.out.println("Введите точки");
         x1 = input("A x1=");
         y1 = input("A y1=");
-        System.out.println("");
+        System.out.println(" ");
         x2 = input("B x2=");
         y2 = input("B y2=");
-        System.out.println("");
+        System.out.println(" ");
         x3 = input("C x3=");
         y3 = input("C y3=");
 
