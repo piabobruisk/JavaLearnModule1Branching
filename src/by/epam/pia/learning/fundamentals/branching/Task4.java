@@ -27,9 +27,9 @@ public class Task4 {
 
         i=0;
 
-        if (func(a,b,x,y)) i++;
-        if (func(a,b,x,z)) i++;
-        if (func(a,b,y,z)) i++;
+        if (isBrickPasses(a,b,x,y)) i++;
+        if (isBrickPasses(a,b,x,z)) i++;
+        if (isBrickPasses(a,b,y,z)) i++;
 
         if (i==0) {
             System.out.println("Кирпич не пройдет в отверстие");
@@ -40,13 +40,13 @@ public class Task4 {
 
     }
 
-private static boolean func (int a, int b , int x, int y){
+private static boolean isBrickPasses(int a, int b , int x, int y){
         /*if (min (a,b) >= min(x,y)  && max (a,b) >= max(x,y)  ) return true;
         return false;*/
-        return min(a, b) >= min(x, y) && max(a, b) >= max(x, y);
+        return Math.min(a, b) >= Math.min(x, y) && Math.max(a, b) >= Math.max(x, y);
 }
 
-    private static int min(int x, int y) {
+    /*private static int min(int x, int y) {
         if (x < y) {
             return x;
         } else {
@@ -60,7 +60,7 @@ private static boolean func (int a, int b , int x, int y){
         } else {
             return y;
         }
-    }
+    }*/
 
 
     private static int input(String prompt) {

@@ -18,10 +18,10 @@ public class Task2 {
         c = input("c=");
         d = input("d=");
 
-        System.out.println(max(min(a, b), min(c, d)));
+        System.out.println(Math.max(Math.min(a, b), Math.min(c, d)));
     }
 
-    private static int min(int x, int y) {
+    /*private static int min(int x, int y) {
         if (x < y) {
             return x;
         } else {
@@ -35,7 +35,7 @@ public class Task2 {
         } else {
             return y;
         }
-    }
+    }*/
 
     private static int input(String prompt) {
 
